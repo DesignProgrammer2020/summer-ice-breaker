@@ -1,30 +1,22 @@
 let animating = false;
 
 //display random questions from this array
-let question_library = ["What is your favorite drink?",
-"What is your favorite cuisine?",
-"What is your favorite dessert?",
-"What is your favorite restaurant?",
-"What is your favorite sports team/athlete?",
-"What kinds of sports/physical activities do you practice?",
-"What is your favorite season?",
-"What kinds of weather do you like?",
-"How is the weather in your area?",
-"What was the best vacation you’ve had?",
+let question_library = ["What activities do you do in summer?",
+"What are your favorite barbecue foods?",
+"What are your favorite summer drinks?",
+"What are your favorite ice cream flavors?",
+"What do you like to do at beaches?",
+"What is you ideal vacation destination?",
+"Where are you going for vacation?",
 "What is your favorite nature/amusement park?",
 "Which kinds of museums do you like to visit?",
-"Which musical instruments do you play?",
-"What genres of music do you like?",
-"What are your favorite singers/bands?",
-"What holidays are celebrated within your culture?",
-"What kinds of animals do you adore?",
-"What is your favorite clothing/jewelry brand?",
-"Which kinds of clothes/jewelry do you prefer wearing?",
-"What is your favorite car brand?",
-"What are your favorite stores of any kind?",
-"What is/was your favorite toy?",
-"What are your hobbies?",
-"What are your favorite colors?"];
+"What kind of songs do you listen to in summer?",
+"What are your favorite summer sports?",
+"Which summer clothing colors do you wear?",
+"What do you like about summer sceneries?",
+"How to say “summer” in languages you know?",
+"How do you keep cool in summer?",
+"What do you like/dislike about summer?"];
 
 let index = -1;
 let state = 'title';
@@ -87,7 +79,7 @@ function title() {
   fill(0, 40, 180); //dark blue text to put over lighter blue background
   textAlign(CENTER);
   textSize(60);
-  text("Ice Breaker", width*0.5, height*0.5);
+  text("Summer Ice Breaker", width*0.5, height*0.5);
   textSize(24);
   text("Click button to begin new round", width*0.5, height*0.75);
 }
@@ -106,7 +98,7 @@ function buttonPressed(){
   if (index >= 0){
     questions.splice(index, 1);
   }
-  if (numQuestions >= 10){
+  if (numQuestions >= 6){
     initTitle();
     console.log(`question_library=${question_library}`);
     return;
