@@ -25,16 +25,11 @@ let state = 'title';
 let questions = [];
 let numQuestions = 0;
 
-let angle = 0; //let cube rotate
-
-let g;
-
 let nextButton; //button to display next question
 
 function setup() {
   cnv=createCanvas(windowWidth, 450);
   cnv.parent("#canvasDiv");
-  g = createGraphics(windowWidth, 600, WEBGL);
   pixelDensity(1);
   nextButton = select("#nextQuestion");
   nextButton.mousePressed(buttonPressed);
