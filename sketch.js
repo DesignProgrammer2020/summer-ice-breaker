@@ -1,21 +1,23 @@
 let animating = false;
 
 //display random questions from this array
-let question_library = ["What activities do you do in summer?",
-"What are your favorite barbecue foods?",
+let question_library = ["What outdoor activities do you do in summer?",
+"What indoor activities do you do in summer?",
+"What are your favorite barbecue meats/veggies?",
 "What are your favorite summer drinks?",
 "What are your favorite ice cream flavors?",
+"What are your favorite popsicle/snow cone flavors?",
 "What do you like to do at beaches?",
-"What is you ideal vacation destination?",
+"What is your ideal summer vacation destination?",
 "Where are you going/where did you go for vacation?",
-"What is your favorite nature/amusement park?",
+"What is your favorite nature/amusement park to visit in summer?",
 "Which kinds of museums do you like to visit?",
 "What kind of songs do you listen to in summer?",
 "What are your favorite summer sports?",
-"Which summer clothing colors do you wear?",
+"Which colors do you wear in summer?",
 "What do you like about summer sceneries?",
 "How to say “summer” in languages you know?",
-"How do you keep cool in summer?",
+"How do you stay cool in summer?",
 "What do you like/dislike about summer?"];
 
 let index = -1;
