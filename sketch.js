@@ -7,7 +7,7 @@ let question_library = ["What activities do you do in summer?",
 "What are your favorite ice cream flavors?",
 "What do you like to do at beaches?",
 "What is you ideal vacation destination?",
-"Where are you going for vacation?",
+"Where are you going/where did you go for vacation?",
 "What is your favorite nature/amusement park?",
 "Which kinds of museums do you like to visit?",
 "What kind of songs do you listen to in summer?",
@@ -53,16 +53,15 @@ function draw() {
    }
 }
 
-function drawPixels() {
-  //draw background with light blue and cyan pixels to resemble ice
+function drawPixels() { //draw a vertical sunset-like background
   loadPixels();
   for (let i = 0; i < width; i++) {
     for (let j = 0; j < height; j++) {
       let index = (i + j * width) * 4;
-      pixels[index + 0] = 0; //no red used here
-      pixels[index + 1] = i*0.125;  //add some green to create cyan
-      pixels[index + 2] = j*0.75; //add blue for coolness
-      pixels[index + 3] = j*0.5; //add transparency to make colors lighter
+      pixels[index + 0] = 255; //add bright red pixels to the top
+      pixels[index + 1] = j*0.75;  //add green pixels to red ones to create yellow
+      pixels[index + 2] = 0; //no blue used here
+      pixels[index + 3] = 180; //added transparency to make colors lighter
     }
   }
   updatePixels();
@@ -76,7 +75,7 @@ function title() {
   }
 
   drawPixels();
-  fill(0, 40, 180); //dark blue text to put over lighter blue background
+  fill(90, 0, 214); //bright purple text
   textAlign(CENTER);
   textSize(60);
   text("Summer Ice Breaker", width*0.5, height*0.5);
