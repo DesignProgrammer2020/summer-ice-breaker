@@ -72,7 +72,7 @@ function title() {
   }
 
   drawPixels();
-  fill(90, 0, 214); //bright purple text
+  fill(90, 0, 214); //bright purple text to contrast with red and yellow background
   textAlign(CENTER);
   textSize(60);
   text("Summer Ice Breaker", width*0.5, height*0.5);
@@ -85,7 +85,6 @@ function showQuestion(){
   textAlign(CENTER);
   textSize(36);
   console.log(`question: index=${index}, length = ${questions.length}`);
-  // text(questions[index], width * 0.5, height * 0.5);
   text(questions[index], width * 0.5, height * 0.5);
 }
 
